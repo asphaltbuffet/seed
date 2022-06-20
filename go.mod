@@ -1,4 +1,4 @@
-module github.com/golang-templates/seed
+module github.com/asphaltbuffet/seed
 
 go 1.18
 
