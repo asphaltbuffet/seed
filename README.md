@@ -36,16 +36,17 @@ It includes:
 - releasing using [GoReleaser](https://github.com/goreleaser/goreleaser),
 - dependencies scanning and updating thanks to [Dependabot](https://dependabot.com),
 - security code analysis using [CodeQL Action](https://docs.github.com/en/github/finding-security-vulnerabilities-and-errors-in-your-code/about-code-scanning),
-- [Visual Studio Code](https://code.visualstudio.com) configuration with [Go](https://code.visualstudio.com/docs/languages/go) support.
+- [Visual Studio Code](https://code.visualstudio.com) configuration
+  with [Go](https://code.visualstudio.com/docs/languages/go) support.
 
 ## Usage
 
-1. Sign up on [Codecov](https://codecov.io/) and configure
-   [Codecov GitHub Application](https://github.com/apps/codecov) for all repositories.
-1. Click the `Use this template` button (alt. clone or download this repository).
-1. Replace all occurrences of `asphaltbuffet/seed` with `your_org/repo_name` in all files.
-1. Replace all occurrences of `seed` to `repo_name` in [Dockerfile](Dockerfile).
-1. Update the following files:
+1. Sign up on [Codecov](https://codecov.io/) and configure the [Codecov GitHub Application](https://github.com/apps/codecov)
+   for all repositories.
+2. Click the `Use this template` button (alt. clone or download this repository).
+3. Replace all occurrences of `asphaltbuffet/seed` with `your_org/repo_name` in all files.
+4. Replace all occurrences of `seed` to `repo_name` in [Dockerfile](Dockerfile).
+5. Update the following files:
    - [CHANGELOG.md](CHANGELOG.md)
    - [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
    - [LICENSE](LICENSE)
@@ -55,13 +56,13 @@ It includes:
 
 Below you can find sample instructions on how to set up the development environment.
 Of course, you can use other tools like [GoLand](https://www.jetbrains.com/go/),
-[Vim](https://github.com/fatih/vim-go), [Emacs](https://github.com/dominikh/go-mode.el).
+[Vim](https://github.com/fatih/vim-go), and [Emacs](https://github.com/dominikh/go-mode.el).
 However, take notice that the Visual Studio Go extension is
 [officially supported](https://blog.golang.org/vscode-go) by the Go team.
 
 1. Install [Go](https://golang.org/doc/install).
 1. Install [Visual Studio Code](https://code.visualstudio.com/).
-1. Install [Go extension](https://code.visualstudio.com/docs/languages/go).
+1. Install the [Go extension](https://code.visualstudio.com/docs/languages/go).
 1. Clone and open this repository.
 1. `F1` -> `Go: Install/Update Tools` -> (select all) -> OK.
 
@@ -78,7 +79,7 @@ However, take notice that the Visual Studio Go extension is
 
 ## Release
 
-The release workflow is triggered each time a tag with `v` prefix is pushed.
+The release workflow is triggered each time a tag with a `v` prefix is pushed.
 
 _CAUTION_: Make sure to understand the consequences before you bump the major version.
 More info: [Go Wiki](https://github.com/golang/go/wiki/Modules#releasing-modules-v2-or-higher),
@@ -93,8 +94,9 @@ Notable files:
 - [.vscode](.vscode) - Visual Studio Code configuration files,
 - [.golangci.yml](.golangci.yml) - golangci-lint configuration,
 - [.goreleaser.yml](.goreleaser.yml) - GoReleaser configuration,
-- [Dockerfile](Dockerfile) - Dockerfile used by GoReleaser to create a container image,
-- [Makefile](Makefile) - Make targets used for development, [CI build](.github/workflows) and [.vscode/tasks.json](.vscode/tasks.json),
+- [Dockerfile](Dockerfile) - Dockerfile config by GoReleaser to create a container image,
+- [Makefile](Makefile) - Make targets used for development, [CI build](.github/workflows),
+  and [.vscode/tasks.json](.vscode/tasks.json),
 - [go.mod](go.mod) - [Go module definition](https://github.com/golang/go/wiki/Modules#gomod),
 - [tools.go](tools.go) - [build tools](https://github.com/golang/go/wiki/Modules#how-can-i-track-tool-dependencies-for-a-module).
 
