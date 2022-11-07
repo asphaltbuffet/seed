@@ -18,8 +18,8 @@
 This is a GitHub repository template for a Go application.
 You can use it:
 
-- to create a new repoisitory with automation and environment setup,
-- as reference when improving automation for an existing repository.
+- to create a new repository with automation and environment setup,
+  as a reference when improving automation for an existing repository.
 
 It includes:
 
@@ -31,7 +31,7 @@ It includes:
   and [misspell](https://github.com/client9/misspell),
 - unit testing with
   [race detector](https://blog.golang.org/race-detector),
-  code covarage [HTML report](https://blog.golang.org/cover)
+  code coverage [HTML report](https://blog.golang.org/cover),
   and [Codecov report](https://codecov.io/),
 - releasing using [GoReleaser](https://github.com/goreleaser/goreleaser),
 - dependencies scanning and updating thanks to [Dependabot](https://dependabot.com),
@@ -43,8 +43,8 @@ It includes:
 1. Sign up on [Codecov](https://codecov.io/) and configure
    [Codecov GitHub Application](https://github.com/apps/codecov) for all repositories.
 1. Click the `Use this template` button (alt. clone or download this repository).
-1. Replace all occurences of `asphaltbuffet/seed` to `your_org/repo_name` in all files.
-1. Replace all occurences of `seed` to `repo_name` in [Dockerfile](Dockerfile).
+1. Replace all occurrences of `asphaltbuffet/seed` with `your_org/repo_name` in all files.
+1. Replace all occurrences of `seed` to `repo_name` in [Dockerfile](Dockerfile).
 1. Update the following files:
    - [CHANGELOG.md](CHANGELOG.md)
    - [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
@@ -104,7 +104,7 @@ Notable files:
 
 Developers that use Visual Studio Code can take advantage of the editor configuration.
 While others do not have to care about it.
-Setting configs for each repo is unnecessary time consuming.
+Setting configs for each repo is unnecessarily time-consuming.
 VS Code is the most popular Go editor ([survey](https://blog.golang.org/survey2019-results))
 and it is officially [supported by the Go team](https://blog.golang.org/vscode-go).
 
@@ -141,7 +141,7 @@ for creating cross-platform build pipelines in Go.
 Take a look at GoReleaser [docs](https://goreleaser.com/customization/)
 as well as [its repo](https://github.com/goreleaser/goreleaser/)
 how it is dogfooding its functionality.
-You can use it to add deb/rpm/snap packages, Homebrew Tap, Scoop App Manifest etc.
+You can use it to add deb/rpm/snap packages, Homebrew Tap, Scoop App Manifest, etc.
 
 If you are developing a library and you like handcrafted changelog and release notes,
 you are free to remove any usage of GoReleaser.
